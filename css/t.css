@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --primary: rgb(171, 41, 50);
+    --background: rgb(231, 231, 231);
+    --heading: 'Bebas Neue', cursive;
+    --content: 'Raleway', sans-serif;
+}
+body{
+    background-color: var(--background);
+}
+h1{
+    font-family: var(--heading);
+}
+@media screen and (max-width: 800px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+    }
+    .container{
+        background-color: white;
+        border-radius: 5px;
+        padding: 2%;
+        box-shadow: 0 0 15px grey;
+        text-align: center;
+    }
+    h1{
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin: 5px;
+    }
+    img.family{
+        width: 40%;
+    }
+    p{
+        font-size: 16px;
+        color: grey;
+        font-family: var(--content);
+    }
+    .code{
+        padding: 2%;
+        border-radius: 5px;
+        width: 96%;
+        background-color: rgb(104, 3, 3);
+        color: rgb(253, 112, 61);
+    }
+    .code p,span{
+        color: white;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+    }
+    .code p{
+        padding-left: 5px;
+        border-left: solid 3px white;
+        margin-bottom: 60px;
+    }
+    .code .grid{
+        text-align: center;
+    }
+    .code img{
+        display: none;
+    }
+    .code span{
+        font-size: 12px;
+        color: rgb(0, 225, 255);
+    }
+    .get-more{
+        font-size: 13px;
+        color: var(--primary);
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin: 10px;
+        margin-top: 30px;
+    }
+    .get-more-span{
+        color: grey;
+        font-size: 12px;
+        margin: 30px;
+        text-transform: capitalize;
+        display: inline-block;
+        line-height: 30px;
+    }
+    .button-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .button-grid button{
+        /* width: 80%; */
+        border: none;
+        font-size: 12px;
+        background-color: rgb(104, 1, 1);
+        color: white;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 801px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+    }
+    .container{
+        background-color: white;
+        border-radius: 5px;
+        padding: 2%;
+        box-shadow: 0 0 15px grey;
+        text-align: center;
+    }
+    h1{
+        font-size: 90px;
+        letter-spacing: 3px;
+        margin: 5px;
+    }
+    img.family{
+        width: 40%;
+    }
+    p{
+        font-size: 20px;
+        color: grey;
+        font-family: var(--content);
+    }
+    .code{
+        padding: 2%;
+        border-radius: 5px;
+        width: 96%;
+        background-color: rgb(104, 3, 3);
+        color: rgb(253, 112, 61);
+    }
+    .code p,span{
+        color: white;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+    }
+    .code p{
+        padding-left: 5px;
+        border-left: solid 3px white;
+        margin-bottom: 60px;
+    }
+    .code .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+    }
+    .code img{
+        width: 4%;
+        filter: invert(1);
+        opacity: 0.7;
+        transition: 0.5s ease;
+    }
+    .code img:hover{
+        opacity: 01;
+        transition: 0.5s ease;   
+    }
+    .code span{
+        font-size: 18px;
+        color: rgb(0, 225, 255);
+    }
+    .get-more{
+        font-size: 23px;
+        color: var(--primary);
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin: 10px;
+        margin-top: 30px;
+    }
+    .get-more-span{
+        color: grey;
+        font-size: 18px;
+        margin: 30px;
+        text-transform: capitalize;
+        display: inline-block;
+        line-height: 30px;
+    }
+    .button-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .button-grid button{
+        /* width: 80%; */
+        border: none;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    .button-grid button:hover{
+        background-color: var(--primary);
+        color: white;
+        transition: 0.5s ease;
+    }
+}

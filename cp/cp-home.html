@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+</head>
+<body>
+    <aside>
+        <div id="dash">
+            <img src="/assets/dash.png" alt="" class="dash">
+            <p class="la">Dashboard</p>
+        </div>
+        <div id="people">
+            <img src="/assets/atty.png" alt="" class="people">
+            <p class="la">Attorneys</p>
+        </div>
+        <div id="post">
+            <img src="/assets/post.png" alt="" class="posts">
+            <p class="la">Posts</p>
+        </div>
+
+    </aside>
+    <section class="body">
+        <div class="title">
+            Dashboard
+        </div>
+        <div class="stats">
+            <div class="no-of-attorneys">
+                <p class="number">
+                    00
+                </p>
+                <p class="label">No. Of Attoreys</p>
+            </div>
+            <div class="no-of-active-atty">
+                <p class="number">
+                    00
+                </p>
+                <p class="label">No. Of Active Attorneys</p>
+            </div>
+            <div class="no-of-posts">
+                <p class="number">
+                    00
+                </p>
+                <p class="label">
+                    No. Of Posts
+                </p>
+            </div>
+        </div>
+        <div class="attorneys-visits">
+            <div class="most-opens">
+                <p class="visits-label">
+                    Most Profile Visits
+                </p>
+                <div id="most-opens-atty">
+
+                </div>
+            </div>
+            <div class="most-calls">
+                <p class="visits-label">
+                    Most Called Attorney
+                </p>
+                <div class="most-called-atty">
+
+                </div>
+            </div>
+            <div class="most-web-visits">
+                <p class="visits-label">
+                    Most Website Visits
+                </p>
+                <div class="most-website-atty">
+                    
+                </div>
+            </div>
+            <div class="most-mailed">
+                <p class="visits-label">
+                    Most Mailed Attorney
+                </p>
+                <div class="most-mailed-atty">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prompt">
+        <h1>YOU ARE UNABLE TO USE THIS SITE ON A MOBILE PHONE</h1>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>

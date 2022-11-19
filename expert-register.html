@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up For Free | One Month Membership</title>
+    <link rel="stylesheet" href="css/free-register.css">
+    <style>
+        #firm{display:none}
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="holder">
+            <div class="heading">
+                APPLICATION REGISTRATION FORM
+            </div>
+            <div class="form-holder">
+                <div class="hori">
+                    <label for="image">IMAGE</label>
+                    <div class="image-holder">
+                        <img src="assets/placeholder.jpg">
+                        <input type="file" name="" id="file">
+                    </div>
+                </div>
+                <div class="name-hori">
+                    <p>NAME</p>
+                    <div class="name-holder">
+                        <div class="fname-holder">
+                            <input type="text" name="firstname" id="firstname">
+                            <label for="firstname">FIRST NAME</label>
+                        </div>
+                        <div class="lname-holder">
+                            <input type="text" name="lastname" id="lastname">
+                            <label for="lastname">LAST NAME</label>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="hori">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="hori">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="hori">
+                    <label for="confirm">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm" id="confirm">
+                </div>
+                <div class="hori">
+                    <label for="office-address">OFFICE ADDRESS</label>
+                    <input type="text" name="office-address" id="office-address">
+                </div>
+                <div class="hori">
+                    <label for="phone">PHONE</label>
+                    <div class="phone-grid">
+                        <input type="text" name="area-code" id="area-code" value="+1" disabled>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="hori">
+                    <label for="website">WEBSITE</label>
+                    <input type="text" name="website" id="website" value="https://"> 
+                </div>
+                <div class="hori">
+                    <label for="facebook">FACEBOOK</label>
+                    <input type="text" name="facebook" id="facebook"> 
+                </div>
+                <div class="hori">
+                    <label for="instagram">INSTAGRAM</label>
+                    <input type="text" name="instagram" id="instagram"> 
+                </div>
+                <div class="hori">
+                    <label for="linkedin">LINKEDIN</label>
+                    <input type="text" name="linkedin" id="linkedin"> 
+                </div>
+                <div class="hori">
+                    <!-- <label for="firm">FIRM</label> -->
+                    <input type="text" name="firm" id="firm">
+                </div>
+                <div class="hori">
+                    <label for="service">SERVICE <br> PROVIDED</label>
+                    <input type="text" name="service" id="service">
+                </div>
+                <div class="hori">
+                    <label for="state">STATE <br> REPRESENT IN</label>
+                    <input type="text" name="state" id="state" >
+                </div>
+                <div class="hori">
+                    <label for="city">CITY</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="hori">
+                    <label for="county">COUNTY</label>
+                    <input type="text" name="county" id="county">
+                </div>
+                <div class="hori">
+                    <label for="country">COUNTRY</label>
+                    <input type="text" name="country" id="country" disabled placeholder="United States">                    
+                </div>
+                <p class="disclamer">
+                    We will not sell your information to any third party whatsoever.
+                </p>
+                <button class="submit-form">
+                    REGISTER
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="toast-body">
+        <p class="toast">
+
+        </p>
+    </div>
+    <script src="js/expert-register.js"></script>
+</body>
+</html>

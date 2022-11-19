@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Attorney}}</title>
+    <style>
+        iframe{ width: 100%; height: 80vh;}
+    </style>
+    <link rel="stylesheet" href="css/cp-v-a.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+</head>
+<body>
+    <aside>
+        <div id="dash">
+            <img src="/assets/dash.png" alt="" class="dash">
+            <p class="la">Dashboard</p>
+        </div>
+        <div id="people">
+            <img src="/assets/atty.png" alt="" class="people">
+            <p class="la">Attorneys</p>
+        </div>
+        <div id="post">
+            <img src="/assets/post.png" alt="" class="posts">
+            <p class="la">Posts</p>
+        </div>
+
+    </aside>
+    <section class="body">
+        <div class="title">
+            {{Attorney Fulname}}
+        </div>
+        <div class="profile">
+            <div class="profile-picture">
+
+            </div>
+            <div class="text-holder">
+                <p class="ful-name">
+                    
+                </p>
+                <p class="firm">
+                    
+                </p>
+                <p class="service">
+                    
+                </p>
+                <p class="office">
+                    
+                </p>
+                <p class="city-state">
+                    
+                </p>
+            </div>
+            <div class="stats">
+                <div class="no-of-visits">
+                    <p class="number">
+                        00
+                    </p>
+                    <p class="label">No. Of Profile Visits</p>
+                </div>
+                <div class="no-of-calls">
+                    <p class="number">
+                        00
+                    </p>
+                    <p class="label">No. Of Calls</p>
+                </div>
+                <div class="no-of-web">
+                    <p class="number">
+                        00
+                    </p>
+                    <p class="label">
+                        No. Of Website Visits
+                    </p>
+                </div>
+                <div class="no-of-mail">
+                    <p class="number">
+                        00
+                    </p>
+                    <p class="label">
+                        No. Of Email Clicks
+                    </p>
+                </div>
+            </div>
+            <div class="other">
+                <p class="desc"></p>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+            <div class="active embody">
+                <p class="label">Activate Status</p>
+                <p class="note"></p>
+            </div>
+            <div class="membership embody">
+                <p class="label">Membership Due Date</p>
+                <p class="expire"></p>
+            </div>
+        </div>
+    </section>
+    <script src="js/cp-v-a.js"></script>
+</body>
+</html>

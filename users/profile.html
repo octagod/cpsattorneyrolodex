@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/users/css/profile.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <title>{{ Attorney }}</title>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <img src="/assets/def_image.jpg" alt="" class="profile-pic pro-pic1">
+            <img src="/assets/link.png" alt="" class="website">
+            <img src="/assets/logout.png" alt="" class="logout">
+        </aside>
+        <main>
+            <div class="header">
+
+            </div>
+            <div class="body">
+                <div class="stat-part">
+                    <img src="/assets/def_image.jpg" alt="" class="profile-pic pro-pic">
+                    <div class="stat-grid">
+                        <div class="opens">
+                            <p class="topic">
+                                Profile<br>Opens
+                            </p>
+                            <p class="profile-opens">
+                                00
+                            </p>
+                        </div>
+                        <div class="web">
+                            <p class="topic">
+                                Web<br>Clicks
+                            </p>
+                            <p class="web-opens">
+                                00
+                            </p>
+                        </div>
+                        <div class="email">
+                            <p class="topic">
+                                Email<br>Clicks
+                            </p>
+                            <p class="email-opens">
+                                00
+                            </p>
+                        </div>
+                        <div class="call">
+                            <p class="topic">
+                                Call<br>Clicks
+                            </p>
+                            <p class="call-opens">
+                                00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-part">
+                    <div class="name">
+                        <h1 id="fullname">Loading</h1>
+                        <p class="email-firm"><span id="email"></span> • <span id="firm"></span></p>
+                        <p id="office"></p>
+                        <p id="city"></p>
+                        <p id="county"></p>
+                        <p class="state-country"> <span id="state"></span> , United States</p>
+                        <hr>
+                    </div>
+                    <div class="information">
+                        <div class="others">
+                            <p class="video-title">
+                                Descriptive Video
+                            </p>
+                            <iframe src="" frameborder="0" id="video"></iframe>
+                            <p class="change-video">Change This Video?</p>
+                        </div>
+                        <div class="sub-grid">
+                            <h2 class="subscription-title">Subscription Information</h2>
+                            <div class="active">
+                                <h3 class="header">Active</h3>
+                                <p class="active-note"></p>
+                            </div>
+                            <div class="subscription">
+                                <h3 class="header">Subscription Due Date</h3>
+                                <p class="sub-note"></p>
+                            </div>
+                        </div>
+                        <button id="subscribe" disabled>
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/profile.js"></script>
+</body>
+</html>

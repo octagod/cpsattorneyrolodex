@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Blog Posts</title>
+    <link rel="stylesheet" href="css/cp-p.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+</head>
+<body>
+    <aside>
+        <div id="dash">
+            <img src="/assets/dash.png" alt="" class="dash">
+            <p class="la">Dashboard</p>
+        </div>
+        <div id="people">
+            <img src="/assets/atty.png" alt="" class="people">
+            <p class="la">Attorneys</p>
+        </div>
+        <div id="post">
+            <img src="/assets/post.png" alt="" class="posts">
+            <p class="la">Posts</p>
+        </div>
+    </aside>
+    <section class="body">
+        <div class="title">
+            Blog Posts
+        </div>
+        <div class="create-post">
+            <h1>Create Posts</h1>
+            <div class="hori">
+                <label for="heading">Heading</label>
+                <input type="text" name="heading" id="heading">
+            </div>
+            <div class="hori">
+                <label for="content">Content</label>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            </div>
+            <button class="preview">Preview</button>
+            <hr>
+            <h3 id="preview-head"></h3>
+            <p id="preview-body"></p>
+            <button class="submit">Publish Blog</button>
+            <hr>
+        </div>
+        <div class="post-lists">
+            <h1>Existing Posts</h1>
+        </div>
+    </section>
+    <div class="toast-body">
+        <p class="toast">
+
+        </p>
+    </div>
+    <script src="js/cp-p.js"></script>
+</body>
+</html>

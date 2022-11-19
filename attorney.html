@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Attorney}}</title>
+    <link rel="stylesheet" href="css/atty.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+</head>
+<body>
+    <section class="pre-header">
+        <ul class="social-buttons" style="color: white; text-align: right; padding-right: 15px;">
+            <a href="tel:+16266280232">626-628-0232</a> 
+        </ul>
+    </section>
+    <header>
+        <div class="logo">
+            <a href="/index.html?visited=visited"><img src="assets/CPS logo.png" alt=""></a>
+        </div>
+        <nav>
+            <span class="nav-button">CONTACT</span>
+            <span class="service_nav">SERVICES</span>
+            <span class="blog_nav">BLOG</span>
+            <button class="search_nav">
+                SEARCH FOR ATTORNEYS
+            </button>
+        </nav>
+        <div class="mobile-menu">
+            <div class="menu"></div>
+        </div>
+    </header>
+    <section class="overlay">
+        <div class="top-half">
+           <div class="img"></div>
+            <div class="text-holder">
+                <p class="fname">
+                    Loading....
+                </p>
+                <hr>
+                <p class="firm"></p>
+                <p class="service"></p>
+                <p class="office-address"></p>
+                <p class="city-state"></p>
+                <hr>
+            </div>
+        </div>
+        <div class="bottom-half">
+            <img src="assets/call.png" alt="" id="call">
+            <img src="assets/world-wide-web.png" alt="" id="web">
+            <img src="assets/mail (1).png" alt="" id="mail">
+        </div>
+    </section>
+    <section class="others">
+        
+        <p class="description"></p>
+        <iframe src="" frameborder="0"></iframe>
+    </section>
+    <section class="footer">
+        <div class="f-column">
+            <div class="divider"></div>
+            <img src="assets/CPS logo.png" alt="">
+        </div>
+        <div class="s-column">
+            <h4>CPS ATTORNEY ROLODEX</h4>
+            <p> 150 N. Santa Anita Ave,
+                Suite 400
+                Arcadia, CA 91006</p>
+        </div>
+    </section>
+    <footer>
+         © <span id="year">2020</span> | CPS Attorney Rolodex
+         <div class="socials">
+            <a href="https://www.facebook.com/cpsattorneyrolodex"><img src="assets/facebook.png" alt=""> </a>
+            <a href="https://tiktok.com/@cpsattorneyrolodex"><img src="assets/tik-tok.png" alt=""> </a>
+            <a href="https://twitter.com/cps_rolodex"><img src="assets/twitter.png" alt=""></a>
+            <a href="https://instagram.com/cpsattorneyrolodex"> <img src="assets/instagram.png" alt=""></a>
+        </div>
+    </footer>
+    <div class="FAB">
+        <ul>
+            <li class="blog_nav">BLOG</li>
+            <li class="service_nav">SERVICES</li> 
+            <li class="search_nav">SEARCH ATTORNEYS</li>  
+        </ul>
+        <span class="button">+</span>
+    </div>
+    <div class="arrow-closer">
+        <img src="assets/back-arrow.png" alt="">
+    </div>
+    <div class="toast-body">
+        <p class="toast">
+
+        </p>
+    </div>
+    <script src="js/atty.js"></script>
+    <script>
+        let contactUs = document.querySelector('.nav-button');
+        contactUs.onclick = function(){
+            location.href = 'mailto:cynthia@cpsattoneyrolodex.com';
+        }
+    </script>
+</body>
+</html>

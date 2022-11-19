@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | CPS Attorney Rolodex</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="first-container">
+                <h1>Welcome Back</h1>
+                <p class="note">To Keep Connected To Us, <br> Kindly Login With Your Email And Password</p>
+                <button class="fog-pass">
+                    FORGOT PASSWORD
+                </button>
+            </div>
+        </div>
+        <div class="second">
+            <h2>Sign In</h2>
+            <sub>Use Your Email and Password</sub>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <p class="forgotPassword">Forgot Password?</p>
+            <button class="sign-in">SIGN IN</button>
+        </div>
+    </div>
+    <div class="toast-body">
+        <p class="toast">
+
+        </p>
+    </div>
+    <script src="js/elogin.js"></script>
+</body>
+</html>
